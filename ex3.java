@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class ex3 {
 
     public static void main(String[] args) {
-        Scanner ler = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int a, b, c, delta;
         float res, res2;
         do {
             System.out.println("Digite o valor de A");
-            a = ler.nextInt();
+            a = sc.nextInt();
             if (a == 0) {
                 System.out.println("Quando A é igual à 0 a equação não é de segundo grau");
                 break;
             } else {
                 System.out.println("Digite o valor de B");
-                b = ler.nextInt();
+                b = sc.nextInt();
                 System.out.println("Digite o valor de C");
-                c = ler.nextInt();
+                c = sc.nextInt();
                 delta = (int) (Math.pow(b, 2)) - (4 * a * c);
                 System.out.println("Delta = " + delta);
                 if (delta < 0) {
